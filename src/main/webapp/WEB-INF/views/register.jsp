@@ -59,10 +59,6 @@
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" name="email" required>
                 </div>
-                <div class="mb-3">
-                    <label for="phone-no" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" id="phone-no" name="phone-no" required>
-                </div>
 
                 <div class="mb-3">
                     <label class="form-label">Role</label><br>
@@ -75,16 +71,10 @@
                         <label class="form-check-label" for="roleEmployee">Employee</label>
                     </div>
                 </div>
+
                 <div class="mb-3">
-                    <label class="form-label">Role</label><br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="role" id="roleOwner" value="Owner" required>
-                        <label class="form-check-label" for="roleOwner">Owner</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="role" id="roleEmployee" value="Employee" required>
-                        <label class="form-check-label" for="roleEmployee">Employee</label>
-                    </div>
+                    <label for="phone-no" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phone-no" name="phone-no" required>
                 </div>
                 
                 <button type="submit" class="btn btn-primary w-100">Register</button>
