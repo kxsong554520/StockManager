@@ -25,6 +25,9 @@ public class Staff {
     private String email;
 
     @Column(length=100)
+    private String name;
+
+    @Column(length=100)
     private String role;
 
     @Column(length=100)
@@ -70,6 +73,14 @@ public class Staff {
         this.role = role;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getPhoneNum() {
         return phoneNum;
     }
@@ -77,4 +88,5 @@ public class Staff {
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
+
 }

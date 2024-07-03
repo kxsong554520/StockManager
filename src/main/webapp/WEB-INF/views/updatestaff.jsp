@@ -1,26 +1,27 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html>
     <head>
     </head>
     <body>
-        <div class="container text-dark mb-5">
-            <h2 class="text-center">Register</h2>
-            <form method="post" action="/userpf">
+        <div class="container text-dark">
+            <h2 class="text-center">Update Staff</h2>
+            <form method="post" action="/staff/edit/${staff.staffId}">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
+                    <input type="text" class="form-control" id="username" name="username" value="${staff.username}" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
+                    <input type="password" class="form-control" id="password" name="password" value="${staff.password}" required>
                 </div>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                    <input type="text" class="form-control" id="name" name="name" value="${staff.name}" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <input type="email" class="form-control" id="email" name="email" value="${staff.email}" required>
                 </div>
 
                 <div class="mb-3">
@@ -37,12 +38,10 @@
 
                 <div class="mb-3">
                     <label for="phoneNum" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" id="phoneNum" name="phoneNum" required>
+                    <input type="text" class="form-control" id="phoneNum" name="phoneNum" value="${staff.phoneNum}" required>
                 </div>
                 
-                <button type="submit" class="btn btn-primary w-100">Register</button>
-                <a href="/" class="btn btn-secondary mt-2">Back to Login page</a>
-
+                <button type="submit" class="btn btn-primary w-100">Update</button>
             </form>
         </div>
     </body>
