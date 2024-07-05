@@ -61,7 +61,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="mt-3">
                 <c:choose>
                     <c:when test="${not empty sales.salesId}">
                         <input type="hidden" name="salesId" value="${sales.salesId}">

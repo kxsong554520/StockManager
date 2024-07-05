@@ -3,7 +3,7 @@
     <html>
 
     <body>
-        <div class="container mt-5 text-dark">
+        <div class="container mt-5 text-dark mb-5">
             <h2 class="mb-4">
                 <c:choose>
                     <c:when test="${stock.stockId!=null}">
@@ -97,7 +97,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="mt-3">
                 <c:choose>
                     <c:when test="${not empty stock.stockId}">
                         <input type="hidden" name="stockId" value="${stock.stockId}">

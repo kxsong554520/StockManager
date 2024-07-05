@@ -39,7 +39,7 @@
                         Please provide a valid email address.
                     </div>
                 </div>
-                <div class="mt-2">
+                <div class="mt-3">
                 <c:choose>
                     <c:when test="${not empty supplier.supplierId}">
                         <input type="hidden" name="supplierId" value="${supplier.supplierId}">

@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="totalCost">Total Cost</label>
+                    <label for="totalCost">Total Cost (RM)</label>
                     <input type="text" class="form-control" id="totalCost" name="totalCost"
                         value="${order.totalCost}" required>
                     <div class="invalid-feedback">
@@ -52,7 +52,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="mt-3">
                 <c:choose>
                     <c:when test="${not empty order.orderId}">
                         <input type="hidden" name="orderId" value="${order.orderId}">

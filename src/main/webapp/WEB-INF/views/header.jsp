@@ -36,7 +36,8 @@
         <header>
             <div class="d-flex align-items-center">
                 <img src="<c:url value='/img/logo.png' />" alt="logo" class="rounded-circle" style="height: 50px; width: 50px;"/>
-                <h1 class="ms-3 mb-0 text-dark">Stock Manager</h1>
+                <h1 class="ms-3 mb-0 text-dark">Grocery Stock Manager</h1>
+                <h3 class="ms-3 mb-0 text-dark">Arissa Sofea Trading</h3>
                 
             </div> 
             

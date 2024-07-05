@@ -15,7 +15,7 @@ public class EmailService {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("kxsong205gmail.com");
         message.setTo(email);
-        message.setText("Hi, " + username + "\nYour Stock Management System account had been setup!!\nYour password is " + password);
+        message.setText("Your username and password for Stock Manager \nUsername" + username + "\nPassword:" + password);
         message.setSubject("Account For Employee Management System");
         
         mailSender.send(message);

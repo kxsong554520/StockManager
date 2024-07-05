@@ -44,6 +44,7 @@
                                 <p>Username: ${staff.username}</p>
                                 <p>Email: ${staff.email}</p>
                                 <p>Phone Number: ${staff.phoneNum}</p>
+                                <p>User Role: ${staff.role}</p>
                         </div>
                     </div>
                 </div>
