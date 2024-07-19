@@ -12,7 +12,7 @@ import com.example.StockManager.service.StockService;
 import com.example.StockManager.service.SupplierService;
 
 @Controller
-public class DashboardController {
+public class BusinessSumController {
 
     @Autowired
     private StaffService staffService;
@@ -29,8 +29,8 @@ public class DashboardController {
     @Autowired
     private SalesService salesService;
 
-    @GetMapping("/dashboard")
-    public String showDashboard(Model model) {
+    @GetMapping("/business")
+    public String showSumamry(Model model) {
         double totalCost = stockService.calculateTotalCost();
         double totalSales = salesService.calculateTotalSales();
         double profit = totalSales - totalCost;
@@ -48,7 +48,7 @@ public class DashboardController {
         model.addAttribute("totalOrders", totalOrders);
         model.addAttribute("totalSold",totalSold);
         model.addAttribute("totalSupplier", totalSupplier);
-        model.addAttribute("pageContent", "dashboard.jsp");
+        model.addAttribute("pageContent", "business.jsp");
         return "mainpage";
     }
 

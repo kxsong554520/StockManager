@@ -7,10 +7,10 @@
             <h2 class="mb-4">
                 <c:choose>
                     <c:when test="${sales.salesId!=null}">
-                        Edit Order
+                        Edit Sale
                     </c:when>
                     <c:otherwise>
-                        Create Order
+                        Create Sale
                     </c:otherwise>
                 </c:choose>
             </h2>
