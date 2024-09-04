@@ -15,7 +15,7 @@ public class EmailService {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("kxsong205gmail.com");
         message.setTo(email);
-        message.setText("Your username and password for Stock Manager \nUsername" + username + "\nPassword:" + password);
+        message.setText("Your username and password for Stock Manager \nUsername: " + username + "\nPassword: " + password);
         message.setSubject("Account For Stock Management System");
         
         mailSender.send(message);

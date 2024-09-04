@@ -65,13 +65,13 @@
                 <c:choose>
                     <c:when test="${not empty sales.salesId}">
                         <input type="hidden" name="salesId" value="${sales.salesId}">
-                        <button type="submit" class="btn btn-primary">Update Order</button>
+                        <button type="submit" class="btn btn-primary">Update Sale</button>
                     </c:when>
                     <c:otherwise>
-                        <button type="submit" class="btn btn-primary">Create Order</button>
+                        <button type="submit" class="btn btn-primary">Create Sale</button>
                     </c:otherwise>
                 </c:choose>
-                <a href="/sales" class="btn btn-secondary">Back to Order List</a>
+                <a href="/sales" class="btn btn-secondary">Back to Sales Record</a>
                 </div>
             </form>
         </div>
